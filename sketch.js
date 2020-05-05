@@ -3,15 +3,22 @@ var bird;
 var pipes = [];
 var endGame;
 var count;
-over = false;
+var over = false;
 
 function setup() {
   bg = loadImage("images/background.png");
   createCanvas(400, 600);
-  count = new count;
+  var reset = createButton("Start Over");
+  reset.position(0,610);
+  reset.mousePressed(reload);
+  count = new count();
   bird = new Bird();
   pipes.push(new Pipe());
   endGame = new endGame();
+}
+
+function reload(){
+  location.reload();
 }
 
 function draw() {
