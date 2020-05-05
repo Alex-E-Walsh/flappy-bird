@@ -1,8 +1,8 @@
 
 function Pipe() {
 
-  this.img_b = loadImage("pipe_bottom.png");
-  this.img_t = loadImage("pipe_top.png");
+  this.img_b = loadImage("images/pipe_bottom.png");
+  this.img_t = loadImage("images/pipe_top.png");
 
   this.x= width-50;
   this.x_speed = 1.5 ;
@@ -30,9 +30,6 @@ function Pipe() {
 
   this.update = function(){
     this.x -= this.x_speed
-    if(this.game_over){
-      this.x_speed=0;
-    }
   };
 
 

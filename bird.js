@@ -1,9 +1,9 @@
 
 function Bird() {
 
-  this.img = loadImage("br_flappy.png");
+  this.img = loadImage("images/br_flappy.png");
 
-  this.y = height / 2;
+  this.y = height / 4;
   this.x = 64;
   this.width = 50;
   this.height = 50;
