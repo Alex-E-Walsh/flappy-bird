@@ -10,8 +10,6 @@ function count(){
   }
 
   this.update = function(pipe){
-    // console.log(pipe.x)
-
     if(bird.x == (pipe.x + pipe.w)){
       this.score ++;
       console.log('plus one');
