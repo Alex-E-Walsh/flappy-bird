@@ -8,11 +8,4 @@ function count(){
     text("SCORE:",width/2,height/10);
     text(this.score,width/2,height/6);
   }
-
-  this.update = function(pipe){
-    if(bird.x == (pipe.x + pipe.w)){
-      this.score ++;
-      console.log('plus one');
-  }
-}
-}
+};
